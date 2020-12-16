@@ -2,10 +2,11 @@ import React from 'react'
 
 export const HomeHeader = () => {
     return (
-        <div>
+        <header className='header'>
+            <></>
 
-        </div>
-    )
-}
+        </header>
+    );
+};
 
 export default HomeHeader;

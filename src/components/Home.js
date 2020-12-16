@@ -22,8 +22,8 @@ export const Home = () => {
             <HomeHelpOrganizations />
             <HomeContact />
         </>
-    )
-}
+    );
+};
 
 export default Home;
 
