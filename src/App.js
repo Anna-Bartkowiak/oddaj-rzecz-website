@@ -1,13 +1,25 @@
 import React from 'react';
 import './scss/main.scss';
+import Home from './components/Home';
+import Login from './components/Login';
+import Register from './components/Register';
+import NotFound from './components/NotFound';
+import {
+  BrowserRouter,
+  Switch,
+  Route
+} from 'react-router-dom';
 
-function App() {
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        It works!
-      </header>
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route exact path=" /" component={Home}></Route>
+        <Route path=" /login" component={Login}></Route>
+        <Route path=" /register" component={Register}></Route>
+        <Route component={NotFound}></Route>
+      </Switch>
+    </BrowserRouter>
   );
 }
 
