@@ -5,21 +5,21 @@ import Home from './components/Home';
 // import Register from './components/Register';
 import NotFound from './components/NotFound';
 import {
-  BrowserRouter,
+  BrowserRouter as Router,
   Switch,
   Route
 } from 'react-router-dom';
 
 export const App = () => {
   return (
-    <BrowserRouter>
+    <Router>
       <Switch>
-        <Route exact path=" /" component={Home}></Route>
+        <Route exact path="/" component={Home}></Route>
         {/* <Route path=" /login" component={Login}></Route>
         <Route path=" /register" component={Register}></Route> */}
         <Route component={NotFound}></Route>
       </Switch>
-    </BrowserRouter>
+    </Router>
   );
 }
 

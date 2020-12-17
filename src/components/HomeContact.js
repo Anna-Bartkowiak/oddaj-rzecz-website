@@ -3,9 +3,9 @@ import React from 'react';
 
 export const HomeContact = () => {
     return (
-        <>
+        <div id='contact'>
             {/* <Link to="/">Home</Link> */}
-        </>
+        </div>
     )
 }
 

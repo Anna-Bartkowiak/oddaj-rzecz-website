@@ -2,7 +2,7 @@ import React from 'react'
 
 export const HomeHelpFundations = () => {
     return (
-        <div>
+        <div id='fund'>
 
         </div>
     )
