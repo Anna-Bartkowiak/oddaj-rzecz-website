@@ -1,6 +1,6 @@
 import React from 'react';
-import HomeNav from './HomeNav';
-import HomeHeader from './HomeHeader';
+// import HomeNav from './HomeNav';
+import HomeHeaderNav from './HomeHeaderNav';
 import HomeThreeColumns from './HomeThreeColumns';
 import HomeSimpleSteps from './HomeSimpleSteps';
 import HomeAboutUs from './HomeAboutUs';
@@ -12,8 +12,8 @@ import HomeContact from './HomeContact';
 export const Home = () => {
     return (
         <>
-            <HomeNav />
-            <HomeHeader />
+            <HomeHeaderNav />
+            {/* <HomeHeader /> */}
             <HomeThreeColumns />
             <HomeSimpleSteps />
             <HomeAboutUs />

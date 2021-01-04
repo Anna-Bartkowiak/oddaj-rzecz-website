@@ -1,10 +1,14 @@
 .header {
-    
+    background-position: top left;
+    // background-size: 88.5rem 96.3rem;
+    background-repeat: no-repeat;
+    z-index: 1;
 
     &__container {
+        height: 96.3rem;
         width: 100%;
-        max-width: 140rem;
         display: flex;
+        justify-content: flex-end;
         align-items: center;
     }
 
@@ -20,10 +24,56 @@
     }
 
     &__textWrapper {
-        
+        margin: 7.5rem 27.5rem 6.6rem 6.6rem;
     }
 
     &__textH1 {
+        font-size: 3.8rem;
+        text-align: center;
+        line-height: 5.5rem;
+    }
 
+    &__decorationImage {
+        height: 3.3rem;
+        z-index: 10;
+    }
+
+    &__buttonsWrapper {
+        display: flex;
+        justify-content: space-between;
+        margin: 6.5rem 0;
+    }
+
+    &__btn {
+        width: 31rem;
+        padding: 1.3rem 0;
+        text-transform: uppercase;
+        font-family: $font-base;
+        font-weight: 300;
+        font-size: 3.6rem;
+        background-color: $color-white;
+        color: $color-fonts;
+        border: 1px solid $color-fonts;
+        outline: none;
+        cursor: pointer;
+        
+        &--active {
+            border: 1px solid $color-secondary;
+        }
+
+        &:hover {
+            color: $color-decoration;
+            background: $color-secondary;
+            transition: 0.3s linear;
+        }
+    }
+
+    &__btnLinks {
+        color: $color-fonts-signin;
+        padding: 0.9rem 1rem;
+        text-decoration: none;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
     }
 }

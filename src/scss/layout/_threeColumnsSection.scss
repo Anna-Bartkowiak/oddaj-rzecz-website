@@ -1,0 +1,14 @@
+.threeColumns {
+    height: 38.4rem;
+    background-position: top left;
+    background-repeat: no-repeat;
+    z-index: 1;
+    
+    &__container {
+        height: 96.3rem;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
