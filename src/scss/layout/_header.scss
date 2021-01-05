@@ -1,6 +1,5 @@
 .header {
     background-position: top left;
-    // background-size: 88.5rem 96.3rem;
     background-repeat: no-repeat;
     z-index: 1;
 
@@ -12,16 +11,15 @@
         align-items: center;
     }
 
-    &__imageWrapper {
-        width: 100%;
-        height: 100%;
-    }
+    // &__imageWrapper {
+    //     width: 100%;
+    //     height: 100%;
+    // }
 
-    &__image {
-        height: 90rem;
-        width: 100%;
-
-    }
+    // &__image {
+    //     height: 90rem;
+    //     width: 100%;
+    // }
 
     &__textWrapper {
         margin: 7.5rem 27.5rem 6.6rem 6.6rem;

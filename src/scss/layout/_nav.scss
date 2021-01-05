@@ -26,6 +26,10 @@
         &:first-child {
             padding-right: 2rem;
         }
+
+        &:nth-child(2) {
+            padding-right: 1.6rem;
+        }
     }
 
     &__btnLinks {
@@ -51,7 +55,6 @@
         align-items: center;
         list-style: none;
         text-align: center;
-        margin-right: -3.5rem;
         font-size: 1.8rem;
     }
 

@@ -1,0 +1,31 @@
+.btn {
+    width: 31rem;
+    padding: 1.3rem 0;
+    text-transform: uppercase;
+    font-family: $font-base;
+    font-weight: 300;
+    font-size: 3.6rem;
+    background-color: $color-white;
+    color: $color-fonts;
+    border: 1px solid $color-fonts;
+    outline: none;
+    cursor: pointer;
+
+    &--active {
+        border: 1px solid $color-secondary;
+    }
+
+    &:hover {
+        color: $color-decoration;
+        background: $color-secondary;
+        transition: 0.3s linear;
+    }
+}
+
+.btnLinks {
+    color: $color-fonts-signin;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,62 @@
+.simpleSteps {
+
+    &__container {
+        text-align: center;
+    }
+
+    &__h2 {
+        font-size: 3.8rem;
+        line-height: 5.5rem;
+        padding: 5.5rem 0 4rem 0;
+    }
+
+    &__decorationImage {
+        display: inline-block;
+        margin-bottom: 4.1rem;
+        color: black;
+        width: 25.3rem;
+        height: 3.3rem;
+    }
+
+    &__backgroundContainer {
+        background-color: $color-primary;
+    }
+
+    &__columnsContainer {
+        max-width: 142rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    &__chooseContainer {
+        text-align: center;
+        margin: 7.1rem 0 7.6rem 0;
+    }
+
+    &__icon {
+        height: 8.3rem;
+        width: 8.3rem;
+        margin: 0 auto;
+    }
+
+    &__h3 {
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+    }
+
+    &__hr {
+        width: 7.5rem;
+        margin: 1rem auto;
+    }
+
+    &__text {
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+
+    .btn {
+        margin: 3.5rem 0 8rem 0;
+    }
+}

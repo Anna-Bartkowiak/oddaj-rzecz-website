@@ -33,7 +33,7 @@ export const HomeHeaderNav = () => {
                             </li>
                             <li className='nav__item'>
                                 <NavLink
-                                    to='what'
+                                    to='steps'
                                     className='nav__links'
                                     smooth={true}
                                     duration={500}
@@ -87,11 +87,11 @@ export const HomeHeaderNav = () => {
                         <h1 className='header__textH1'>Zacznij pomagać!<br />Oddaj niechciane rzeczy w zaufane ręce</h1>
                         <div className='header__decorationImage' style={{ 'decorationImage': `url(${decoration})` }}></div>
                         <div className='header__buttonsWrapper'>
-                            <button className='header__btn'>
-                                <LinkR to="/login" className='header__btnLinks'>oddaj<br />rzeczy</LinkR>
+                            <button className='btn'>
+                                <LinkR to="/login" className='btnLinks'>oddaj<br />rzeczy</LinkR>
                             </button>
-                            <button className='header__btn'>
-                                <LinkR to="/login" className='header__btnLinks'>zorganizuj<br />zbiórkę</LinkR>
+                            <button className='btn'>
+                                <LinkR to="/login" className='btnLinks'>zorganizuj<br />zbiórkę</LinkR>
                             </button>
                         </div>
                     </div>
