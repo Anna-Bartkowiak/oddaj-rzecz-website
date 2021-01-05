@@ -85,7 +85,7 @@ export const HomeHeaderNav = () => {
                 <div className='header__container'>
                     <div className='header__textWrapper'>
                         <h1 className='header__textH1'>Zacznij pomagać!<br />Oddaj niechciane rzeczy w zaufane ręce</h1>
-                        <div className='header__decorationImage' style={{ 'decorationImage': `url(${decoration})` }}></div>
+                        <img src={decoration} className='header__decorationImage' alt="decoration" />
                         <div className='header__buttonsWrapper'>
                             <button className='btn'>
                                 <LinkR to="/login" className='btnLinks'>oddaj<br />rzeczy</LinkR>
