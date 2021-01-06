@@ -1,0 +1,44 @@
+.aboutUs {
+    background-color: $color-primary;
+
+    &__container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    &__wrapperText {
+        height: 100%;
+        text-align: center;
+        width: 65.7rem;
+        margin: 17.2rem auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__h2 {
+        font-size: 3.8rem;
+        line-height: 5.5rem;
+        padding-bottom: 4rem;
+    }
+
+    &__text {
+        font-size: 3rem;
+        line-height: 5.4rem;
+        padding: 6.2rem 0 4rem 0;
+    }
+
+    &__signatureImage {
+
+        &--toRight {
+            align-self: flex-end;
+        }
+    }
+
+    &__teamImage {
+        // max-width: 100%;
+        // width: 94.8rem;
+        height: 93.5rem;
+        margin-right: -36rem;
+    }
+}
