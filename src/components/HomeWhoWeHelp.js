@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 // import { Link as LinkR } from 'react-router-dom';
 import decoration from '../assets/Decoration.svg';
 import { Tabs, Tab, TabPanel, TabList } from 'react-web-tabs';
 
 export const HomeWhoWeHelp = () => {
+    const [activeIndex, setActiveIndex] = useState(1);
+
     return (
         <>
             <section id='fund' className='whoWeHelp'>
@@ -15,9 +17,24 @@ export const HomeWhoWeHelp = () => {
                     <Tabs defaultTab="two"
                         onChange={(tabId) => { console.log(tabId) }}>
                         <TabList>
-                            <Tab tabFor="one" className='btnMedium'>Fundacjom społecznym</Tab>
-                            <Tab tabFor="two" className='btnMedium active'>Organizacjom<br />pozarządowym</Tab>
-                            <Tab tabFor="three" className='btnMedium'>Lokalnym<br />zbiórkom</Tab>
+                            <Tab tabFor="one"
+                                tabIndex={1}
+                                onClick={() => setActiveIndex(1)}
+                                className={(activeIndex === this.props.tabIndex ? 'active ' : '') + "btnMedium"}>
+                                Fundacjom społecznym
+                            </Tab>
+                            <Tab tabFor="two"
+                                tabIndex={2}
+                                onClick={() => setActiveIndex(2)}
+                                className={(activeIndex === this.props.tabIndex ? 'active ' : '') + "btnMedium"}>
+                                Organizacjom<br />pozarządowym
+                            </Tab>
+                            <Tab tabFor="three"
+                                tabIndex={3}
+                                onClick={() => setActiveIndex(3)}
+                                className={(activeIndex === this.props.tabIndex ? 'active ' : '') + "btnMedium"}>
+                                Lokalnym<br />zbiórkom
+                            </Tab>
                         </TabList>
                         <TabPanel tabId="one">
                             <p className='whoWeHelp__textP'>W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.</p>
