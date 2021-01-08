@@ -18,21 +18,18 @@ export const HomeWhoWeHelp = () => {
                         onChange={(tabId) => { console.log(tabId) }}>
                         <TabList>
                             <Tab tabFor="one"
-                                tabIndex={1}
                                 onClick={() => setActiveIndex(1)}
-                                className={(activeIndex === this.props.tabIndex ? 'active ' : '') + "btnMedium"}>
+                                className={(activeIndex === 1 ? 'active ' : '') + "btnMedium"}>
                                 Fundacjom społecznym
                             </Tab>
                             <Tab tabFor="two"
-                                tabIndex={2}
                                 onClick={() => setActiveIndex(2)}
-                                className={(activeIndex === this.props.tabIndex ? 'active ' : '') + "btnMedium"}>
+                                className={(activeIndex === 2 ? 'active ' : '') + "btnMedium"}>
                                 Organizacjom<br />pozarządowym
                             </Tab>
                             <Tab tabFor="three"
-                                tabIndex={3}
                                 onClick={() => setActiveIndex(3)}
-                                className={(activeIndex === this.props.tabIndex ? 'active ' : '') + "btnMedium"}>
+                                className={(activeIndex === 3 ? 'active ' : '') + "btnMedium"}>
                                 Lokalnym<br />zbiórkom
                             </Tab>
                         </TabList>
