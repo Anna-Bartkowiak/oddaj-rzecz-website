@@ -5,6 +5,8 @@
 
     &__container {
         width: 100%;
+        max-width: 190rem;
+        margin: 0 auto;
         height: 38.4rem;
         display: flex;
         justify-content: space-around;

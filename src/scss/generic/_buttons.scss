@@ -9,6 +9,7 @@
     color: $color-fonts;
     border: 1px solid $color-fonts;
     outline: none;
+    overflow: hidden;
     cursor: pointer;
 
     &--active {
@@ -20,6 +21,33 @@
         background: $color-secondary;
         transition: 0.3s linear;
     }
+}
+
+.btnMedium {
+    width: 20.8rem;
+    height: 8.1rem;
+    font-family: $font-base;
+    font-size: 2.4rem;
+    background-color: $color-white;
+    border: none;
+    color: $color-fonts;
+    overflow: hidden;
+    outline: none;
+    cursor: pointer;
+
+    .active {
+        border: 1px solid $color-fonts;
+    }
+
+    &:hover {
+        color: $color-decoration;
+        background: $color-secondary;
+        transition: 0.3s linear;
+    }
+}
+
+.btnMedium:not(:last-child) {
+    margin-right: 6.9rem;
 }
 
 .btnLinks {

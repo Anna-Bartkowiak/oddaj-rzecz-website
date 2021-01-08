@@ -4,9 +4,7 @@ import HomeHeaderNav from './HomeHeaderNav';
 import HomeThreeColumns from './HomeThreeColumns';
 import HomeSimpleSteps from './HomeSimpleSteps';
 import HomeAboutUs from './HomeAboutUs';
-import HomeHelpFundations from './HomeHelpFundations';
-import HomeHelpLocal from './HomeHelpLocal';
-import HomeHelpOrganizations from './HomeHelpOrganizations';
+import HomeWhoWeHelp from './HomeWhoWeHelp';
 import HomeContact from './HomeContact';
 
 export const Home = () => {
@@ -17,9 +15,7 @@ export const Home = () => {
             <HomeThreeColumns />
             <HomeSimpleSteps />
             <HomeAboutUs />
-            <HomeHelpFundations />
-            <HomeHelpLocal />
-            <HomeHelpOrganizations />
+            <HomeWhoWeHelp />
             <HomeContact />
         </>
     );

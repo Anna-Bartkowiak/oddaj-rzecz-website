@@ -1,0 +1,83 @@
+.whoWeHelp {
+
+    &__container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 7rem auto;
+    }
+
+    &__textWrapper {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__textH1 {
+        font-size: 3.8rem;
+        line-height: 5.5rem;
+    }
+
+    &__decorationImage {
+        height: 3.3rem;
+        margin-top: 2.5rem;
+        margin-bottom: 5.7rem;
+    }
+
+    &__textP {
+        width: 64rem;
+        font-size: 2.2rem;
+        line-height: 3rem;
+        margin: 6.8rem auto 3.2rem auto;
+    }
+
+    &__entriesWrapper {
+        width: 134.4rem;
+    }
+
+    &__entry {
+        padding: 3.4rem 0 3.1rem 0;
+        display: flex;
+        justify-content: space-between;
+        font-family: $font-alt;
+        font-weight: 300;
+
+        &--left {
+            text-align: left;
+        }
+
+        &--right {
+            text-align: right;
+        }
+    }
+
+    &__entry:not(:last-child) {
+        border-bottom: 1px solid $color-fonts;
+    }
+
+
+    &__entryH2 {
+        font-size: 2.6rem;
+        line-height: 3.1rem;
+        padding-bottom: 0.6rem;
+    }
+
+    &__entryGoal {
+        font-style: italic;
+    }
+
+
+    &__entryGoal,
+    &__entryStaff {
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+    }
+
+    &__buttonsWrapper {
+        display: flex;
+        justify-content: space-between;
+        margin: 6.5rem 0;
+    }
+}
