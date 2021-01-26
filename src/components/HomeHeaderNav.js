@@ -23,7 +23,7 @@ export const HomeHeaderNav = () => {
                                 <li className='nav__item'>
                                     <NavLink
                                         to="/"
-                                        className='nav__links active'
+                                        className='nav__links'
                                         smooth={true}
                                         duration={500}
                                         spy={true}
@@ -58,7 +58,7 @@ export const HomeHeaderNav = () => {
                                 </li>
                                 <li className='nav__item'>
                                     <NavLink
-                                        to='fund'
+                                        to='foundations'
                                         className='nav__links'
                                         smooth={true}
                                         duration={500}

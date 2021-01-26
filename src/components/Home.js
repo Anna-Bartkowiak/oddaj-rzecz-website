@@ -11,7 +11,6 @@ export const Home = () => {
     return (
         <>
             <HomeHeaderNav />
-            {/* <HomeHeader /> */}
             <HomeThreeColumns />
             <HomeSimpleSteps />
             <HomeAboutUs />
