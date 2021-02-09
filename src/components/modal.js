@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function modal() {
+export const Modal = () => {
     return (
         <>
 
@@ -36,3 +36,5 @@ export default function modal() {
         </>
     );
 }
+
+export default Modal;

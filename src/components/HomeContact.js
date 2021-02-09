@@ -47,13 +47,13 @@ export const HomeContact = () => {
                     <form onSubmit={handleSubmit} className="form__content">
                         <div>
                             <label htmlFor="name">Wpis swoję imię</label>
-                            <label htmlFor="mail">Wpisz swój mail</label>
+                            <label htmlFor="mail">Wpisz swój e-mail</label>
                         </div>
                         <div>
                             <input
                                 placeholder="name"
                                 id="name"
-                                class="form-control"
+                                className="form-control"
                                 required
                                 value={name}
                                 onChange={(e) => setName(e.target.value)}
@@ -62,15 +62,15 @@ export const HomeContact = () => {
                                 type="mail"
                                 placeholder="e-mail"
                                 id="mail"
-                                class="form-control"
+                                className="form-control"
                                 required
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                             ></input>
                         </div>
                         {email.indexOf("@") === -1 ? (
-                            <div class="invalid-feedback" id="inv_mail">
-                                Wpisz mail
+                            <div className="invalid-feedback" id="inv_mail">
+                                Wpisz e-mail
               </div>
                         ) : (
                                 ""
@@ -79,7 +79,7 @@ export const HomeContact = () => {
                             <label htmlFor="validationCustom01">Wpisz swoją wiadomość</label>
                             <input
                                 type="text"
-                                class="form-control"
+                                className="form-control"
                                 id="validationCustom01"
                                 placeholder="Wpisz tekst"
                                 required
@@ -87,7 +87,7 @@ export const HomeContact = () => {
                                 value={message}
                             />
                             {message.length <= 5 ? (
-                                <div class="invalid-feedback">Wpisz wiadomość</div>
+                                <div className="invalid-feedback">Wpisz wiadomość</div>
                             ) : (
                                     ""
                                 )}
@@ -97,12 +97,15 @@ export const HomeContact = () => {
                             style={{ background: loader ? "#ccc" : "#ffffffc9" }}
                         >
                             Wyślij
-            </button>
-                        <div className="footer">
-                            <img src={insta} alt="instagram" />
-                            <img src={facebook} alt="facebook" />
-                        </div>
+                        </button>
                     </form>
+                </div>
+                <div className="footer">
+                    <p>Copyright by CodersLab</p>
+                    <div className="footer__img">
+                        <img src={insta} alt="instagram" />
+                        <img src={facebook} alt="facebook" />
+                    </div>
                 </div>
             </div>
             {loader && <Modal />}
