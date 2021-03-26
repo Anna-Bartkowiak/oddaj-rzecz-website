@@ -7,7 +7,7 @@ import decoration from '../assets/Decoration.svg';
 export const HomeHeaderNav = () => {
     return (
         <>
-            <section className="sectionHeader">
+            <section className="sectionHeader" name="sectionHeader">
                 <header className='header' style={{ 'backgroundImage': `url(${background})` }}>
                     <nav className='nav'>
                         <div className='nav__navbarContainer'>
@@ -22,7 +22,7 @@ export const HomeHeaderNav = () => {
                             <ul className='nav__menu'>
                                 <li className='nav__item'>
                                     <NavLink
-                                        to="/"
+                                        to="sectionHeader"
                                         className='nav__links'
                                         smooth={true}
                                         duration={500}

@@ -1,4 +1,5 @@
 import React from "react";
+// import '../scss/main.scss';
 import { Link as LinkR } from 'react-router-dom';
 import { Link as NavLink } from 'react-scroll';
 import { BrowserRouter as Link } from "react-router-dom";

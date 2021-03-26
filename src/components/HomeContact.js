@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import FromBackground from "../assets/Background_Image.png";
-import insta from "../assets/Instagram.png";
+import instagram from "../assets/Instagram.png";
 import facebook from "../assets/Facebook.png";
 import { db } from "./firebase";
 import Modal from "./modal";
@@ -103,7 +103,7 @@ export const HomeContact = () => {
                 <div className="footer">
                     <p>Copyright by CodersLab</p>
                     <div className="footer__img">
-                        <img src={insta} alt="instagram" />
+                        <img src={instagram} alt="instagram" />
                         <img src={facebook} alt="facebook" />
                     </div>
                 </div>

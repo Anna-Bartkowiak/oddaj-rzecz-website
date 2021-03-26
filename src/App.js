@@ -14,10 +14,18 @@ export const App = () => {
   return (
     <Router>
       <Switch>
-        <Route exact path="/" component={Home}></Route>
-        <Route path="/Login.js" component={Login}></Route>
-        <Route path="/Register.js" component={Register}></Route>
-        <Route path="/NotFound.js" component={NotFound}></Route>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/login">
+          <Login />
+        </Route>
+        <Route path="/register">
+          <Register />
+        </Route>
+        <Route>
+          <NotFound />
+        </Route>
       </Switch>
     </Router>
   );

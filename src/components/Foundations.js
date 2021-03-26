@@ -13,7 +13,9 @@ export const Foundations = ({ foundations }) => {
                             </div>
                             <p className="foundation__items">{item.items}</p>
                         </li>
-                        <div className="foundation__list__line"></div>
+                        <div
+                            key={index} className="foundation__list__line">
+                        </div>
                     </>
                 );
             })}
